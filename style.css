@@ -1,0 +1,112 @@
+/* index.html */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.btn {
+  font-size: 30px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.btn-add {
+  background-color: rgba(19, 19, 160, 0.548);
+  margin-right: 10px;
+}
+.btn-reset {
+  background-color: rgba(160, 160, 9, 0.774);
+}
+li {
+  font-size: 25px;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+a {
+  color: blue;
+}
+
+.task-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+.task-place {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-place:first-child {
+  margin-right: 80px;
+}
+.task-time:first-child {
+  margin-right: 160px !important;
+}
+
+.box {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.box-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid black;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.box-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.btn-close {
+  cursor: pointer;
+}

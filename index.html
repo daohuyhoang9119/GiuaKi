@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Semester</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Phân công giao hàng</h1>
+      <form action="" onsubmit="validateForm()" method="post">
+        <h4>Tên công việc</h4>
+        <input type="text" placeholder="abc" id="name-job" />
+        <h4>Người phụ trách</h4>
+        <input type="text" placeholder="xyx bn" id="nguoiphutrach" />
+        <h4>Nơi nhận hàng</h4>
+        <select name="from" id="from">
+          <option value="" disabled selected>
+            Vui lòng chọn tỉnh/thành phố nhận hàng
+          </option>
+          <option value="TP HCM">TP HCM</option>
+          <option value="Hà Nội">Hà Nội</option>
+          <option value="Quy Nhơn">Quy Nhơn</option>
+        </select>
+        <h4>Nơi giao hàng</h4>
+        <select name="to" id="to">
+          <option value="" disabled selected>
+            Vui lòng chọn tỉnh/thành phố giao hàng
+          </option>
+          <option value="TP HCM">TP HCM</option>
+          <option value="Hà Nội">Hà Nội</option>
+          <option value="Quy Nhơn">Quy Nhơn</option>
+        </select>
+        <h4>Ngày bắt đầu</h4>
+        <input type="date" id="start" name="start" />
+        <h4>Ngày kết thúc</h4>
+        <input type="date" id="end" name="end" />
+        <h4>Chi tiết công việc</h4>
+        <textarea
+          placeholder="Chi tiết công việc hoặc hàng hóa"
+          style="height: 200px"
+          id="detail"
+        ></textarea>
+        <div class="btn-container">
+          <!-- <input type="submit btn btn-add" value="Submit" /> -->
+          <button class="btn btn-add" type="submit">Them</button>
+          <button class="btn btn-add" type="reset">Reset</button>
+          <!-- <button class="btn btn-add" type="submit" value="Them" />
+          <input class="btn btn-reset" value="Reset" type="reset" /> -->
+        </div>
+      </form>
+    </div>
+    <ul class="task-list">
+      <!-- <li class="tast-item">
+        <a href="#" class="popup">Tên công việc</a>
+        <div class="box">
+          <div class="box-content">
+            <div class="box-heading">
+              <h3>Tên Công Việc</h3>
+              <span class="btn-close">X</span>
+            </div>
+            <p>Người phụ trách: người phụ trách</p>
+            <div class="task-place">
+              <span>Nơi nhận hàng: Nơi nhận</span>
+              <span>Nơi giao hàng: Nơi giao</span>
+            </div>
+            <div class="task-time">
+              <span>Ngày bắt đầu: 2/5/2021</span>
+              <span>Ngày kết thúc: 10/5/2021</span>
+            </div>
+            <p>Chi tiết</p>
+            <p>Chi tiết công việc và hàng hóa hiển thị ở đây</p>
+          </div>
+        </div>
+        <span>Tên người phụ trách</span>
+        <span>Nơi nhận: nơi nhận hàng</span>
+        <span>Ngày bắt đầu: ngày bắt đầu </span>
+      </li> -->
+    </ul>
+  </body>
+  <script src="script.js"></script>
+</html>
